@@ -1,6 +1,5 @@
 """
-コメントアウトです。
-複数行のコメントを書く特に利用します。
+課題 Hello Worldを表示
 """
 
 print("Good Job!") # Good Job!
