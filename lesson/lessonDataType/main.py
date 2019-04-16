@@ -16,7 +16,11 @@ print(isTrue)         # True
 dataIntConv = int(dataFloat)    # float型からint型へ変換
 dataFloatConv = float(dataInt)  # int型からfloat型へ変換
 dataStrConv = str(dataFloat)    # float型からstr型へ変換
-
 print(dataIntConv)         # 10
 print(dataFloatConv)       # 10.0
 print(dataStrConv)         # 10.1234
+
+# 型確認
+print(type(dataIntConv), type(dataIntConv) is int)            # <class 'int'>   True
+print(type(dataFloatConv), type(dataFloatConv) is float)      # <class 'float'> True
+print(type(dataStrConv), type(dataStrConv) is str)            # <class 'str'>   True

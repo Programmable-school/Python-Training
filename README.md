@@ -6,7 +6,7 @@
 - [Hello Worldを表示](#環境構築)
 - [変数と定数](#変数と定数)
 - [データ型](#データ型)
-- 演算子
+- [演算子](#演算子)
 - スコープ
 - 関数
 - リスト型・タプル型
@@ -49,36 +49,49 @@ print("Hello World") # Hello World
 ```sh
 # 実行
 $ python3 lesson/lessonHelloWorld/main.py 
-
 Hello World
 ```
 #### 課題
 ##### 課題 1
-コンソール上に「Good Job!」を表示してください。
+「Good Job!」を表示してください。
 
+```sh
+# 実行
+$ python3 answer/lessonHelloWorld/task1.py 
+
+# 出力
+Good Job!
+```
 ## トレーニング
 
 ### 変数と定数
 ```sh
 # 実行
 $ python3 lesson/lessonVarConst/main.py
-Hello World
-Hello OCA
-2
-Hello World
 ```
 
 [ソースコード](./lesson/lessonVarConst/main.py)
 
 #### 課題
 ##### 課題 1
-二つの文字列（HelloとWorld）を連結してコンソール上に表示してください。<br>
-また二つの数字を足し算した結果をコンソール上に表示してください。<br>
+二つの文字列（HelloとWorld）を連結して表示してください。
 
 ```sh
 # 実行
-$ python3 answer/lessonVarConst/main.py 
+$ python3 answer/lessonVarConst/task1.py 
+
+# 出力
 Hello World
+```
+
+##### 課題 2
+二つの数字を足し算した結果を表示してください。
+
+```sh
+# 実行
+$ python3 answer/lessonVarConst/task2.py 
+
+# 出力
 7
 ```
 
@@ -87,13 +100,6 @@ Hello World
 ```sh
 # 実行
 $ python3 lesson/lessonDataType/main.py 
-10
-10.1234
-Hello
-True
-10
-10.0
-10.1234
 ```
 
 [ソースコード](./lesson/lessonDataType/main.py)
@@ -101,3 +107,63 @@ True
 
 #### 課題
 ##### 課題 1
+20.123をfloat型で表示してください。またfloat型であることを証明してください。
+
+```sh
+# 実行
+$ python3 answer/lessonDataType/task1.py 
+
+# 出力
+20.123 <class 'float'> True
+```
+
+##### 課題 2
+float型の20.123をstr型で表示してください。またstr型であることを証明してください。
+
+```sh
+# 実行
+$ python3 answer/lessonDataType/task2.py 
+
+# 出力
+20.123 <class 'str'> True
+```
+
+### 演算子
+
+```sh
+# 実行
+$ python3 lesson/lessonOperator/main.py 
+```
+
+[ソースコード](./lesson/lessonOperator/main.py)
+
+
+#### 課題
+##### 課題 1
+20と7の二つの数字をそれぞれ計算した結果を表示してください。<br>
+足し算、掛け算、割り算、除算、余り、べき乗。
+
+```sh
+# 実行
+$ python3 answer/lessonOperator/task1.py 
+
+# 出力
+23 60 6.666666666666667 6 2 8000
+```
+
+##### 課題 2
+以下の文字列からマッチする単語を見つけてin演算子で単語が含まれていることを証明してください。
+
+文字列：Attention: Mr. John Smith Human Resources Department AAA Company
+
+```sh
+# 実行
+$ python3 answer/lessonOperator/task2.py 
+
+# 出力
+Attention: Mr. John Smith Human Resources Department AAA Company
+Attention True
+Resources True
+Company True
+
+```
