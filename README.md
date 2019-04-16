@@ -52,8 +52,8 @@ $ python3 lesson/lessonHelloWorld/main.py
 
 Hello World
 ```
-### 課題
-#### 課題 1
+#### 課題
+##### 課題 1
 コンソール上に「Good Job!」を表示してください。
 
 ## トレーニング
@@ -70,8 +70,8 @@ Hello World
 
 [ソースコード](./lesson/lessonVarConst/main.py)
 
-### 課題
-#### 課題 1
+#### 課題
+##### 課題 1
 二つの文字列（HelloとWorld）を連結してコンソール上に表示してください。<br>
 また二つの数字を足し算した結果をコンソール上に表示してください。<br>
 
@@ -99,5 +99,5 @@ True
 [ソースコード](./lesson/lessonDataType/main.py)
 
 
-### 課題
-#### 課題 1
+#### 課題
+##### 課題 1
