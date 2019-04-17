@@ -7,8 +7,7 @@
 - [変数と定数](#変数と定数)
 - [データ型](#データ型)
 - [演算子](#演算子)
-- スコープ
-- 関数
+- [関数・スコープ](#関数・スコープ)
 - リスト型・タプル型
 - スライス
 - 集合型
@@ -19,6 +18,7 @@
 - Lambda
 - クラス
 - アクセス制限・継承
+- 型判定
 - モジュール分割・パッケージ分割
 - 例外処理
 - ファイルの入出力
@@ -166,4 +166,55 @@ Attention True
 Resources True
 Company True
 
+```
+
+### 関数・スコープ
+
+```sh
+# 実行
+$ python3 lesson/lessonFunctionScope/main.py 
+```
+
+[ソースコード](./lesson/lessonFunctionScope/main.py)
+
+
+#### 課題
+##### 課題 1
+「こんにちは」と返す関数を実装してください。
+
+```sh
+# 実行
+$ python3 answer/lessonFunctionScope/task1.py 
+
+# 出力
+こんにちは
+```
+
+##### 課題 2
+デフォルト引数を使って変数の指定有無に関わらず文字列を表示する関数を実装してください。
+
+```sh
+# 実行
+$ python3 answer/lessonFunctionScope/task2.py 
+
+# 出力
+# func1()
+Hello
+
+# func1("Good Morning")
+Good Morning
+```
+
+##### 課題 3
+「足し算」「引き算」「掛け算」「割り算」するそれぞれ４つの関数を実装してください。
+
+```sh
+# 実行
+$ python3 answer/lessonFunctionScope/task3.py 
+
+# 出力
+10 + 2 = 12
+10 - 2 = 8
+10 * 2 = 20
+10 / 2 = 5
 ```
