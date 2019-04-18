@@ -283,7 +283,9 @@ last o
 $ python3 lesson/lessonListTuple/task4.py 
 
 # 出力
+values1 ['Hello', 'World', '!', 'Good', 'Morning', '!']
 values1 index:1 count:2
+values2 ['World', 'Wide', '.', '!', 'Morning', '!']
 values2 index:0 count:2
 ```
 
