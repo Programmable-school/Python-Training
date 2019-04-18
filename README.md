@@ -8,8 +8,9 @@
 - [データ型](#データ型)
 - [演算子](#演算子)
 - [関数・スコープ](#関数・スコープ)
-- リスト型・タプル型
+- [リスト型・タプル型](#リスト型・タプル型])
 - スライス
+- 条件判断
 - 集合型
 - 辞書型
 - イテレーター
@@ -217,4 +218,82 @@ $ python3 answer/lessonFunctionScope/task3.py
 10 - 2 = 8
 10 * 2 = 20
 10 / 2 = 5
+```
+
+### リスト型・タプル型
+
+```sh
+# 実行
+$ python3 lesson/lessonListTuple/main.py 
+```
+
+[ソースコード](./lesson/lessonListTuple/main.py)
+
+
+#### 課題
+##### 課題 1
+文字列のリスト型を作り、全ての要素を表示してください。
+
+```sh
+# 実行
+$ python3 lesson/lessonListTuple/task1.py 
+
+# 出力
+['a', 'i', 'u', 'e', 'o']
+```
+
+##### 課題 2
+文字列のリスト型を２つを連結して新しいリスト型を作り、全ての要素を表示してください。
+
+
+```sh
+# 実行
+$ python3 lesson/lessonListTuple/task2.py 
+
+# 出力
+values1 ['a', 'i', 'u', 'e', 'o']
+values2 ['ka', 'ki', 'ku', 'ke', 'ko']
+values3 ['a', 'i', 'u', 'e', 'o', 'ka', 'ki', 'ku', 'ke', 'ko']
+```
+
+##### 課題 3
+文字列のリスト型を作り、「リストの長さ」「先頭の要素」「末端の要素」を表示してください。
+
+```sh
+# 実行
+$ python3 lesson/lessonListTuple/task3.py 
+
+# 出力
+values1 ['a', 'i', 'u', 'e', 'o']
+length 5
+first a
+last o
+```
+
+##### 課題 4
+以下のリスト型から "World" が格納されている位置と "!" の個数を表示してください。
+
+```
+["Hello", "World", "!", "Good", "Morning", "!"]
+["World", "Wide", ".", "!", "Morning", "!"]
+```
+
+```sh
+# 実行
+$ python3 lesson/lessonListTuple/task4.py 
+
+# 出力
+values1 index:1 count:2
+values2 index:0 count:2
+```
+
+##### 課題 5
+タプル型を作り、全ての要素を表示してください。
+
+```sh
+# 実行
+$ python3 lesson/lessonListTuple/task5.py 
+
+# 出力
+('Hello', 100, 'World', 0.123)
 ```
