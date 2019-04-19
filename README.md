@@ -9,10 +9,11 @@
 - [演算子](#演算子)
 - [関数_スコープ](#関数_スコープ)
 - [リスト型_タプル型](#リスト型_タプル型)
-- スライス
-- 条件判断
-- 集合型
-- 辞書型
+- [集合型](#集合型)
+- [辞書型](#辞書型)
+- [if文](#if文)
+- for文
+- while文
 - イテレーター
 - リスト操作
 - Map
@@ -236,7 +237,7 @@ $ python3 lesson/lessonListTuple/main.py
 
 ```sh
 # 実行
-$ python3 lesson/lessonListTuple/task1.py 
+$ python3 answer/lessonListTuple/task1.py 
 
 # 出力
 ['a', 'i', 'u', 'e', 'o']
@@ -248,7 +249,7 @@ $ python3 lesson/lessonListTuple/task1.py
 
 ```sh
 # 実行
-$ python3 lesson/lessonListTuple/task2.py 
+$ python3 answer/lessonListTuple/task2.py 
 
 # 出力
 values1 ['a', 'i', 'u', 'e', 'o']
@@ -261,7 +262,7 @@ values3 ['a', 'i', 'u', 'e', 'o', 'ka', 'ki', 'ku', 'ke', 'ko']
 
 ```sh
 # 実行
-$ python3 lesson/lessonListTuple/task3.py 
+$ python3 answer/lessonListTuple/task3.py 
 
 # 出力
 values1 ['a', 'i', 'u', 'e', 'o']
@@ -280,7 +281,7 @@ last o
 
 ```sh
 # 実行
-$ python3 lesson/lessonListTuple/task4.py 
+$ python3 answer/lessonListTuple/task4.py 
 
 # 出力
 values1 ['Hello', 'World', '!', 'Good', 'Morning', '!']
@@ -294,8 +295,163 @@ values2 index:0 count:2
 
 ```sh
 # 実行
-$ python3 lesson/lessonListTuple/task5.py 
+$ python3 answer/lessonListTuple/task5.py 
 
 # 出力
 ('Hello', 100, 'World', 0.123)
+```
+
+### 集合型
+
+```sh
+# 実行
+$ python3 lesson/lessonSet/main.py 
+```
+
+[ソースコード](./lesson/lessonSet/main.py)
+
+
+#### 課題
+##### 課題 1
+以下の集合型データから "Hello" が含まれていることを証明してください。
+
+```python
+values = {0, "H", "e", "Good", "Hello", "Morning", 100} 
+```
+
+```sh
+# 実行
+$ python3 answer/lessonSet/task1.py 
+
+# 出力
+{0, 'Morning', 100, 'Good', 'e', 'H', 'Hello'}: Hello is True
+```
+
+##### 課題 2
+以下の二つの集合型データの和集合・積集合・差集合した結果を表示してください。
+
+```python
+values1 = {0, 10, 200, 1000, 2, 100} 
+values2 = {0, 0.01, 2, 600, 10, 100}
+```
+
+```sh
+# 実行
+$ python3 answer/lessonSet/task2.py 
+
+# 出力
+OR: {0, 2, 100, 1000, 200, 10, 0.01, 600}
+AND: {0, 2, 10, 100}
+DIFF: {1000, 200}
+```
+
+### 辞書型
+
+```sh
+# 実行
+$ python3 lesson/lessonDictionary/main.py
+```
+
+[ソースコード](./lesson/lessonDictionary/main.py)
+
+
+#### 課題
+##### 課題 1
+以下の情報の辞書型データを作成してください。
+
+```
+name: Sakurai
+age: 20
+hobby: eating
+like: music
+girlfriend: nothing
+```
+
+```sh
+# 実行
+$ python3 answer/lessonDictionary/task1.py 
+
+# 出力
+{'name': 'Sasuke', 'age': 20, 'hobby': 'eating', 'like': 'music', 'girlfriend': 'nothing'}
+```
+
+##### 課題 2
+以下の辞書型データから"hobby"と"isHasGirldFriend"の値を表示してください
+
+```python
+values = {"name": "Sasuke", "age": 20, "hobby": "running", "like": "music", "isHasGirldFriend": False}
+```
+
+```sh
+# 実行
+$ python3 answer/lessonDictionary/task1.py 
+
+# 出力
+hobby is running
+isHasGirldFriend is 0
+```
+
+### if文
+
+```sh
+# 実行
+$ python3 lesson/lessonIf/main.py 
+```
+
+[ソースコード](./lesson/lessonIf/main.py)
+
+
+#### 課題
+##### 課題 1
+valueの値に応じて以下の文字列を返す関数を実装してください。
+
+```
+範囲: 1 <= value <= 10  文字列: "Top Ranker"
+範囲: 10 < value < 50   文字列: "Ranker"
+範囲: 50 < value <= 100 文字列: "Normal Ranker"
+範囲: else              文字列: "Unknow"
+```
+
+```sh
+# 実行
+$ python3 answer/lessonIf/task1.py 
+
+# 出力
+value 1: Top Ranker
+value 13: Ranker
+value 90: Normal Ranker
+value 200: Unknow
+```
+
+##### 課題 2
+足し算、引き算、掛け算、割り算する関数を実装してください。<br>
+ただし計算の種別の引数を指定して条件判断を行い計算するようにしてください。
+
+
+```sh
+# 実行
+$ python3 answer/lessonIf/task2.py 
+
+# 出力
+10 + 3: 13
+10 - 3: 7
+10 * 3: 30
+10 / 3: 3
+```
+
+##### 課題 3
+コンソール上から Hello を入力すると Nice to meet you. と返し、それ以外の文字列の場合は Unknow　と表示する条件判断式を実装してください。
+
+コンソールからの入力は input 構文を使います。
+
+```sh
+# 実行
+$ python3 answer/lessonIf/task3.py 
+
+# 出力
+Please input text > Hello
+Nice to meet you.
+
+Please input text > Good
+Unknow
 ```

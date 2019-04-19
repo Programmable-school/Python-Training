@@ -65,3 +65,16 @@ print(values[0], values[2])   # 0 Hello
 
 print(values.index("Hello"))  # 2
 print(values.count("Hello"))  # 1
+
+# スライス
+sliceValues = [10, 20, 30, 40]
+
+# 要素の位置の1〜3番目を表示
+print(sliceValues[1:4]) # [20, 30, 40]
+
+# 要素の位置の0〜1番目を表示
+print(sliceValues[:2])  # [10, 20]
+
+# 要素の位置の2番目以降
+print(sliceValues[2:])  # [30, 40]
+
