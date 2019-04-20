@@ -2,7 +2,7 @@
 課題 for文
 """
 
-size = int(input("size -> "))
+size = int(input("Please input size > "))
 result = ""
 for i in range(size):
   for j in range(size):

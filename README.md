@@ -539,7 +539,12 @@ forループとif文を使って*を以下のように表示してください�
 $ python3 answer/lessonFor/task4.py 
 
 # 出力
-size -> 5
+Please input size > 3
+*
+**
+***
+
+Please input size > 5
 *
 **
 ***
@@ -564,7 +569,12 @@ forループとif文を使って*を以下のように表示してください�
 $ python3 answer/lessonFor/task5.py 
 
 # 出力
-size -> 5
+Please input size > 3
+  *
+ **
+***
+
+Please input size > 5
     *
    **
   ***
