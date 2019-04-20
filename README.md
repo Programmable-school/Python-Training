@@ -12,7 +12,7 @@
 - [集合型](#集合型)
 - [辞書型](#辞書型)
 - [if文](#if文)
-- for文
+- [for文](#for文)
 - while文
 - イテレーター
 - リスト操作
@@ -454,4 +454,120 @@ Nice to meet you.
 
 Please input text > Good
 Unknow
+```
+
+### for文
+
+```sh
+# 実行
+$ python3 lesson/lessonFor/main.py 
+```
+
+[ソースコード](./lesson/lessonFor/main.py)
+
+
+#### 課題
+##### 課題 1
+range(5)をforループで実装してください。
+
+```sh
+# 実行
+$ python3 answer/lessonFor/task1.py 
+
+# 出力
+0
+1
+2
+3
+4
+```
+
+##### 課題 2
+forループを使って以下のリストの全ての要素を2倍にして表示してください。
+
+```python
+values = [2, 4, 5, 7, 8, 12]
+```
+```sh
+# 実行
+$ python3 answer/lessonFor/task2.py 
+
+# 出力
+4
+8
+10
+14
+16
+24
+```
+
+##### 課題 3
+for文を2つ使ってrange(size)を表示してください。<br>
+sizeは任意の数字が入ります。
+
+```sh
+# 実行
+$ python3 answer/lessonFor/task3.py 
+
+# 出力
+size: 3
+i: 0 j: 0
+i: 0 j: 1
+i: 0 j: 2
+i: 1 j: 0
+i: 1 j: 1
+i: 1 j: 2
+i: 2 j: 0
+i: 2 j: 1
+i: 2 j: 2
+```
+
+##### 課題 4
+forループとif文を使って*を以下のように表示してください。<br>
+但し inputでsizeを入力し、size分表示するようにしてください。
+
+```
+*
+**
+***
+****
+*****
+```
+
+```sh
+# 実行
+$ python3 answer/lessonFor/task4.py 
+
+# 出力
+size -> 5
+*
+**
+***
+****
+*****
+```
+
+
+##### 課題 5
+forループとif文を使って*を以下のように表示してください。<br>
+但し inputでsizeを入力し、size分表示するようにしてください。
+```
+    *
+   **
+  ***
+ ****
+*****
+```
+
+```sh
+# 実行
+$ python3 answer/lessonFor/task5.py 
+
+# 出力
+size -> 5
+    *
+   **
+  ***
+ ****
+*****
 ```
