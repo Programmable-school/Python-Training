@@ -1,8 +1,12 @@
 """
 Hello Worldを表示
-
-コメントアウトです。
-複数行のコメントを書く特に利用します。
 """
 
-print("Hello World") # Hello World
+"""
+コメントアウト
+  ３つのダブルクォーテーションで囲むと複数行のコメント書くことができます。
+"""
+print("Hello World")              # Hello World
+print("Hello" + " World")         # Hello World
+print("Hello %s" % str("World"))  # Hello World
+

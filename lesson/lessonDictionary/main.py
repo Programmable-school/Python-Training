@@ -1,8 +1,8 @@
 """
 辞書型
+  {key: value}の形式のデータ。
 """
 
-# {key: value}の形式のデータ
 values = {"id": 0, "name": "Taro"}
 print(values, values["id"], values["name"]) # {'id': 0, 'name': 'Taro'} 0 Taro
 

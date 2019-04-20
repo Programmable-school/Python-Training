@@ -13,11 +13,10 @@
 - [辞書型](#辞書型)
 - [if文](#if文)
 - [for文](#for文)
-- while文
-- イテレーター
-- リスト操作
-- Map
-- Lambda
+- [while文](#while文)
+- [イテレータ_ジェネレータ](#イテレータ_ジェネレータ)
+- [Lambda](#Lambda)
+- [リスト操作](#リスト操作)
 - クラス
 - アクセス制限_継承
 - 型判定
@@ -40,17 +39,14 @@
 
 ### Hello worldを表示する
 ```python
-"""
-コメントアウトです。
-複数行のコメントを書く特に利用します。
-"""
-
 print("Hello World") # Hello World
 ```
 
 ```sh
 # 実行
 $ python3 lesson/lessonHelloWorld/main.py 
+Hello World
+Hello World
 Hello World
 ```
 #### 課題
@@ -581,3 +577,118 @@ Please input size > 5
  ****
 *****
 ```
+
+### while文
+
+```sh
+# 実行
+$ python3 lesson/lessonWhile/main.py 
+```
+
+[ソースコード](./lesson/lessonWhile/main.py)
+
+
+#### 課題
+##### 課題 1
+5回ループするwhile文を実装し、5回ループ後に Good を表示してください。
+
+```sh
+# 実行
+$ python3 answer/lessonWhile/task1.py 
+
+# 出力
+loop i 0
+loop i 1
+loop i 2
+loop i 3
+loop i 4
+```
+
+##### 課題 2
+5回ループするwhile文を実装し、1回目はDog、2回目はCatを表示して3回目でbreakしてループを抜けてください。
+
+```sh
+# 実行
+$ python3 answer/lessonWhile/task2.py 
+
+# 出力
+loop i 0
+Dog
+loop i 1
+Cat
+loop i 2
+Break
+```
+
+### イテレータ_ジェネレータ
+```sh
+# 実行
+$ python3 lesson/lessonIterGene/main.py 
+```
+
+[ソースコード](./lesson/lessonIterGene/main.py)
+
+
+#### 課題
+##### 課題 1
+以下のリストをイテレータ化して全て取り出してください。
+
+```python
+values = ["Hello", "world", "Good", "morning"]
+```
+
+```sh
+# 実行
+$ python3 answer/lessonIterGene/task1.py 
+
+# 出力
+Hello
+world
+Good
+morning
+```
+
+##### 課題 2
+以下のリストをジェネレータ化して全て取り出してください。
+
+```python
+values = ["Hello", "world", "Good", "morning"]
+```
+
+```sh
+# 実行
+$ python3 answer/lessonIterGene/task2.py 
+
+# 出力
+Hello
+world
+Good
+morning
+```
+
+### Lambda
+```sh
+# 実行
+$ python3 lesson/lessonLambda/main.py 
+```
+
+[ソースコード](./lesson/lessonLambda/main.py)
+
+#### 課題
+##### 課題 1
+##### 課題 2
+##### 課題 3
+
+
+### リスト操作
+```sh
+# 実行
+$ python3 lesson/lessonListOperate/main.py 
+```
+
+[ソースコード](./lesson/lessonListOperate/main.py)
+
+#### 課題
+##### 課題 1
+##### 課題 2
+##### 課題 3
