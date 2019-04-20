@@ -4,6 +4,7 @@
 
 ## 目次
 - [Hello Worldを表示](#環境構築)
+- [print文](#print文)
 - [変数と定数](#変数と定数)
 - [データ型](#データ型)
 - [演算子](#演算子)
@@ -33,34 +34,51 @@
 - Python 3.6.5 以上
 
 ## 手順
-
 ### 環境構築
 
-
 ### Hello worldを表示する
+任意のフォルダ作成し、その中にmain.pyを作成して以下のコードを実装してください。
+
 ```python
-print("Hello World") # Hello World
+print("Hello World")
 ```
+
+プログラムの実行方法は以下の通りです。
 
 ```sh
 # 実行
+# python3 <実行したいpyファイルのパス>
 $ python3 lesson/lessonHelloWorld/main.py 
-Hello World
-Hello World
+
+# 実行結果が表示される
 Hello World
 ```
+
+これで環境構築は完了です。
+
+## トレーニング
+pythonの文法を学びます。サンプルコードを写経し実行した後に課題を進めてください。
+
+### print文
+
+```sh
+# 実行
+$ python3 lesson/lessonPrint/main.py 
+```
+
+[ソースコード](./lesson/lessonPrint/main.py)
+
 #### 課題
 ##### 課題 1
 「Good Job!」を表示してください。
 
 ```sh
 # 実行
-$ python3 answer/lessonHelloWorld/task1.py 
+$ python3 answer/lessonPrint/task1.py 
 
 # 出力
 Good Job!
 ```
-## トレーニング
 
 ### 変数と定数
 ```sh
