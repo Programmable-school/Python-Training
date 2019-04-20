@@ -1,7 +1,7 @@
 """
 Lambda
-  無名関数とも呼ぶ。
-  lambda 引数:返り値 で実装する。
+  無名関数
+  lambda 引数:返り値 で実装する
 """
 
 func1 = lambda x: x*3

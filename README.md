@@ -695,8 +695,31 @@ $ python3 lesson/lessonLambda/main.py
 
 #### 課題
 ##### 課題 1
+値を10倍にするLambda関数を実装してください。
+
+```sh
+# 実行
+$ python3 answer/lessonLambda/task1.py 
+
+# 出力
+5 => 50
+```
+
 ##### 課題 2
-##### 課題 3
+以下の関数をLambda関数で実装してください。
+
+```python
+def func1(a, b):
+  return a - b
+```
+
+```sh
+# 実行
+$ python3 answer/lessonLambda/task2.py 
+
+# 出力
+5 - 2 = 3
+```
 
 
 ### リスト操作
@@ -709,5 +732,108 @@ $ python3 lesson/lessonListOperate/main.py
 
 #### 課題
 ##### 課題 1
+sortを使って以下のリストを昇順・降順に並べ替えてください。
+
+```python
+values = [10, 2, 300, 1, 0, 6, 9]
+```
+
+```sh
+# 実行
+$ python3 answer/lessonListOperate/task1.py 
+
+# 出力
+asc [0, 1, 2, 6, 9, 10, 300]
+desc [300, 10, 9, 6, 2, 1, 0]
+```
+
 ##### 課題 2
+mapを使って以下のリストの要素を全て10倍にしてください。
+
+```python
+values = [10, 2, 300, 1, 0, 6, 9]
+```
+
+```sh
+# 実行
+$ python3 answer/lessonListOperate/task1.py 
+
+# 出力
+[100, 20, 3000, 10, 0, 60, 90]
+```
+
+
 ##### 課題 3
+filterを使って以下のリストを10以上の要素だけをフィルタリングしてください。
+
+```python
+values = [12, 2, 300, 1, 0, 6, 9]
+```
+
+```sh
+# 実行
+$ python3 answer/lessonListOperate/task3.py 
+
+# 出力
+filter [12, 300]
+```
+
+##### 課題 4
+sortedを使って以下のリストのageの値で昇順・降順に並べ替えてください。
+
+```python
+values = [
+  {"name": "taro",   "age": 20},
+  {"name": "ueno",   "age": 32},
+  {"name": "tanaka", "age": 10},
+]
+```
+
+```sh
+# 実行
+$ python3 answer/lessonListOperate/task4.py 
+
+# 出力
+asc [{'name': 'tanaka', 'age': 10}, {'name': 'taro', 'age': 20}, {'name': 'ueno', 'age': 32}]
+desc [{'name': 'ueno', 'age': 32}, {'name': 'taro', 'age': 20}, {'name': 'tanaka', 'age': 10}]
+```
+
+##### 課題 5
+mapを使って以下のリストのscoreの値を全て10倍にしてください。
+
+```python
+values = [
+  {"name": "taro",   "score": 1},
+  {"name": "ueno",   "score": 4},
+  {"name": "tanaka", "score": 8},
+]
+```
+
+```sh
+# 実行
+$ python3 answer/lessonListOperate/task5.py 
+
+# 出力
+map [{'name': 'taro', 'score': 10}, {'name': 'ueno', 'score': 40}, {'name': 'tanaka', 'score': 80}]
+```
+
+##### 課題 6
+filterを使って以下のリストのscoreを100以上の要素だけをフィルタリングしてください。
+
+```python
+values = [
+  {"name": "taro",   "score": 10},
+  {"name": "ueno",   "score": 40},
+  {"name": "tanaka", "score": 200},
+  {"name": "hanako", "score": 90},
+  {"name": "baba",   "score": 120},
+]
+```
+
+```sh
+# 実行
+$ python3 answer/lessonListOperate/task6.py 
+
+# 出力
+filter [{'name': 'tanaka', 'score': 200}, {'name': 'baba', 'score': 120}]
+```
