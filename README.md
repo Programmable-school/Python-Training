@@ -1,6 +1,6 @@
 # Python-Training
 
-> 初学者向け Python構文理解のためのソースコード
+> 初学者向け Python入門トレーニング
 
 ## 目次
 - [Hello Worldを表示](#環境構築)
