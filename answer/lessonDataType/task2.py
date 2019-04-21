@@ -2,6 +2,6 @@
 課題 データ型
 """
 
-dataFloat = 20.123
-dataStr = str(dataFloat)
-print(dataStr, type(dataStr), type(dataStr) is str)
+data_float = 20.123
+data_str = str(data_float)
+print(data_str, type(data_str), type(data_str) is str)

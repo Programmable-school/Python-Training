@@ -4,5 +4,4 @@
 
 x = 4
 y = 3
-result2 = x + y
-print(result2)
+print(x + y)

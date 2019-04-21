@@ -19,14 +19,14 @@ def func4(x, y = 10):
   return x + y
 
 # パス付き関数 中身のない関数
-def funcPass():
+def func_pass():
   pass
 
 func1()               # 関数です
 func2("Kansudesu")    # Kansudesu
 print(func3(10, 2))   # 12
 print(func4(10))      # 20
-print(funcPass())     # None
+print(func_pass())    # None
 
 
 # スコープ

@@ -18,7 +18,7 @@
 - [イテレータ_ジェネレータ](#イテレータ_ジェネレータ)
 - [Lambda](#Lambda)
 - [リスト操作](#リスト操作)
-- クラス
+- [クラス](#クラス)
 - アクセス制限_継承
 - 型判定
 - モジュール分割_パッケージ分割
@@ -387,14 +387,14 @@ girlfriend: nothing
 $ python3 answer/lessonDictionary/task1.py 
 
 # 出力
-{'name': 'Sasuke', 'age': 20, 'hobby': 'eating', 'like': 'music', 'girlfriend': 'nothing'}
+{'name': 'Sasuke', 'age': 20, 'hobby': 'eating', 'like': 'music', 'girlFriend': 'nothing'}
 ```
 
 ##### 課題 2
 以下の辞書型データから"hobby"と"isHasGirldFriend"の値を表示してください
 
 ```python
-values = {"name": "Sasuke", "age": 20, "hobby": "running", "like": "music", "isHasGirldFriend": False}
+values = {"name": "Sasuke", "age": 20, "hobby": "running", "like": "music", "isHasGirlFriend": False}
 ```
 
 ```sh
@@ -403,7 +403,7 @@ $ python3 answer/lessonDictionary/task1.py
 
 # 出力
 hobby is running
-isHasGirldFriend is 0
+isHasGirlFriend is 0
 ```
 
 ### if文
@@ -837,3 +837,16 @@ $ python3 answer/lessonListOperate/task6.py
 # 出力
 filter [{'name': 'tanaka', 'score': 200}, {'name': 'baba', 'score': 120}]
 ```
+
+### クラス
+
+```sh
+# 実行
+$ python3 lesson/lessonClass/main.py 
+```
+
+[ソースコード](./lesson/lessonClass/main.py)
+
+#### 課題
+##### 課題 1
+##### 課題 2

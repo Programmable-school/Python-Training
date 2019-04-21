@@ -4,5 +4,4 @@
 
 hello = "Hello"
 world = " World"
-result1 = hello + world
-print(result1)
+print(hello + world)
