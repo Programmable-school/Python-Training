@@ -25,6 +25,8 @@
 - 例外処理
 - ファイルの入出力
 - 正規表現
+- 日付関数
+- 数学関数
 - TypeAliases
 - Callable
 - Generics
@@ -849,4 +851,33 @@ $ python3 lesson/lessonClass/main.py
 
 #### 課題
 ##### 課題 1
+以下のクラス変数をもったクラスを作成してください。クラス変数に値を設定した後に、クラス関数でクラス変数の内容を表示してください。
+
+```python
+name = "Taro"
+score = 100
+```
+
+```sh
+# 実行
+$ python3 answer/lessonClass/task1.py 
+
+# 出力
+My name is Taro. My score is 100.
+```
+
+
 ##### 課題 2
+「足し算」「引き算」「掛け算」「割り算」するそれぞれ４つの関数をもったクラスを実装してください。
+
+
+```sh
+# 実行
+$ python3 answer/lessonClass/task2.py 
+
+# 出力
+10 + 3 = 13
+10 - 3 = 7
+10 * 3 = 30
+10 / 3 = 3.333333
+```
