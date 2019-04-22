@@ -19,7 +19,7 @@
 - [Lambda](#Lambda)
 - [リスト操作](#リスト操作)
 - [クラス](#クラス)
-- アクセス制限_継承
+- [継承](#継承)
 - 型判定
 - モジュール分割_パッケージ分割
 - 例外処理
@@ -453,7 +453,7 @@ $ python3 answer/lessonIf/task2.py
 10 + 3: 13
 10 - 3: 7
 10 * 3: 30
-10 / 3: 3
+10 / 3: 3.333333
 ```
 
 ##### 課題 3
@@ -880,4 +880,65 @@ $ python3 answer/lessonClass/task2.py
 10 - 3 = 7
 10 * 3 = 30
 10 / 3 = 3.333333
+```
+
+### 継承
+
+
+```sh
+# 実行
+$ python3 lesson/lessonInheritance/main.py 
+```
+
+[ソースコード](./lesson/lessonInheritance/main.py)
+
+#### 課題
+##### 課題 1
+Bossクラスを継承したクラスでBossクラスのshow_otakaraを実行してotakaraを表示してください。<br>
+
+Bossクラス
+
+```python
+class Boss:
+  def __init__(self):
+    self.otakara = "Otakara is shinsaibashi."
+  def show_otakara(self):
+    print(self.otakara)
+```
+
+```sh
+# 実行
+$ python3 answer/lessonInheritance/task1.py 
+
+# 出力
+Otakara is shinsaibashi.
+```
+
+##### 課題 2
+Bossクラスを継承したKobunクラスのshow_my_salaryを実行してBossクラスのkobun_salaryを表示してください。<br>
+
+BossクラスとKobunクラス
+
+```python
+class Boss:
+  def __init__(self):
+    self.kobun_salary = 200000
+  def get_salary(self):
+    return self.kobun_salary
+
+class Kobun(Boss):
+  def __init__(self):
+    super().__init__()
+  def show_my_salary(self):
+    """
+      ここでget_salaryを呼んでkobun_salaryを表示してください
+    """
+```
+
+```sh
+# 実行
+$ python3 answer/lessonInheritance/task2.py 
+
+# 出力
+My salary is 200000.
 ```
