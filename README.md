@@ -20,9 +20,9 @@
 - [リスト操作](#リスト操作)
 - [クラス](#クラス)
 - [継承](#継承)
-- 型判定
-- モジュール分割_パッケージ分割
-- 例外処理
+- [型判定](#型判定)
+- [モジュール分割_パッケージ分割](#モジュール分割_パッケージ分割)
+- [例外処理](#例外処理)
 - ファイルの入出力
 - 正規表現
 - 日付関数
@@ -884,7 +884,6 @@ $ python3 answer/lessonClass/task2.py
 
 ### 継承
 
-
 ```sh
 # 実行
 $ python3 lesson/lessonInheritance/main.py 
@@ -894,7 +893,7 @@ $ python3 lesson/lessonInheritance/main.py
 
 #### 課題
 ##### 課題 1
-Bossクラスを継承したクラスでBossクラスのshow_otakaraを実行してotakaraを表示してください。<br>
+Bossクラスを継承したクラスでBossクラスのshow_otakaraを実行してotakaraを表示してください。
 
 Bossクラス
 
@@ -915,7 +914,7 @@ Otakara is shinsaibashi.
 ```
 
 ##### 課題 2
-Bossクラスを継承したKobunクラスのshow_my_salaryを実行してBossクラスのkobun_salaryを表示してください。<br>
+Bossクラスを継承したKobunクラスのshow_my_salaryを実行してBossクラスのkobun_salaryを表示してください。
 
 BossクラスとKobunクラス
 
@@ -942,3 +941,71 @@ $ python3 answer/lessonInheritance/task2.py
 # 出力
 My salary is 200000.
 ```
+
+### 型判定
+
+```sh
+# 実行
+$ python3 lesson/lessonType/main.py 
+```
+
+[ソースコード](./lesson/lessonType/main.py)
+
+#### 課題
+##### 課題 1
+str, int, float, bool型の値に応じて任意の文字列を返す関数を実装してください。
+
+型の判定は type() を使ってください。
+
+```sh
+# 実行
+$ python3 answer/lessonType/task1.py 
+
+# 出力
+value -> This is str.
+100 -> This is int.
+1.230000 -> This is float.
+True -> This is bool.
+```
+
+##### 課題 2
+str, int, float, bool型の値に応じて任意の文字列を返す関数を実装してください。
+
+型の判定は isinstance() を使ってください。
+
+```sh
+# 実行
+$ python3 answer/lessonType/task2.py 
+
+# 出力
+value -> This is str.
+100 -> This is int.
+1.230000 -> This is float.
+True -> This is int.
+```
+
+
+### モジュール分割_パッケージ分割
+
+```sh
+# 実行
+$ python3 lesson/lessonModulePackage/main.py 
+```
+
+[ソースコード](./lesson/lessonModulePackage/)
+
+#### 課題
+##### 課題 1
+
+
+### 例外処理
+
+```sh
+# 実行
+$ python3 lesson/lessonExcept/main.py 
+```
+
+[ソースコード](./lesson/lessonExcept/main.py)
+
+#### 課題
+##### 課題 1
