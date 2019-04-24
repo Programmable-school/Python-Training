@@ -37,7 +37,8 @@
 
 ## 手順
 ### 環境構築
-T.B.D
+・Pycharm<br>
+[https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)
 
 ### Hello worldを表示する
 任意のフォルダ作成し、その中にmain.pyを作成して以下のコードを実装してください。

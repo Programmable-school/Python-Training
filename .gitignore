@@ -115,3 +115,9 @@ dmypy.json
 
 # cache
 /*/*/__pycache__
+
+# idea
+.idea
+
+# vscode
+.vscode
