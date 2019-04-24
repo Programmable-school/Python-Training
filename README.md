@@ -22,11 +22,11 @@
 - [継承](#継承)
 - [型判定](#型判定)
 - [モジュール分割_パッケージ分割](#モジュール分割_パッケージ分割)
+- 日付関数
+- 数学関数
 - [例外処理](#例外処理)
 - ファイルの入出力
 - 正規表現
-- 日付関数
-- 数学関数
 - TypeAliases
 - Callable
 - Generics
@@ -982,7 +982,7 @@ $ python3 answer/lessonType/task2.py
 value -> This is str.
 100 -> This is int.
 1.230000 -> This is float.
-True -> This is int.
+True -> This is bool.
 ```
 
 
@@ -997,6 +997,33 @@ $ python3 lesson/lessonModulePackage/main.py
 
 #### 課題
 ##### 課題 1
+「Hello World」と表示する hello_world.py を作成し、main.pyから呼び出してください。
+
+また「足し算」「引き算」「掛け算」「割り算」するそれぞれ４つの関数を実装した calc.py を作成し、main.pyでcalc.pyをimportしてそれぞれの計算結果を表示してください。
+
+フォルダ構成は以下の通りです
+```
+.
+└── lessonModulePackage
+    ├── hello_world.py
+    ├── main.py
+    └── util
+        ├── __init__.py
+        └── calc.py
+```
+
+```sh
+# 実行
+$ python3 answer/lessonModulePackage/main.py 
+
+# 出力
+Hello world
+10 + 3 = 13
+10 - 3 = 7
+10 * 3 = 30
+10 / 3 = 3.333333
+```
+
 
 
 ### 例外処理
@@ -1010,3 +1037,32 @@ $ python3 lesson/lessonExcept/main.py
 
 #### 課題
 ##### 課題 1
+100 / 0 を行いエラーを発生させて例外処理でエラー要因を表示させてください。 
+
+```sh
+# 実行
+$ python3 answer/lessonExcept/task1.py 
+
+# 出力
+except division by zero
+```
+
+##### 課題 2
+forループを利用して「0から5までカウントする処理」を実装し、3の段階で例外処理を発生させるよう実装してください。
+
+```sh
+# 実行
+$ python3 answer/lessonExcept/task2.py 
+
+# 出力
+0
+1
+2
+3
+except error by raise
+```
+
+## 備考
+[Pythonの基本的なエラー一覧とその原因の確認方法](https://note.nkmk.me/python-error-message/)
+
+[Pycharm：import文で「Unresolved reference」と警告されてしまう](http://virgo.hatenadiary.jp/entry/2015/08/23/023717)

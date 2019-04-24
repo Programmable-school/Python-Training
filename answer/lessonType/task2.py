@@ -6,11 +6,12 @@ def func1(value) -> str:
   if isinstance(value, str):
     return "This is str."
   elif isinstance(value, int):
-    return "This is int."
+    if isinstance(value, bool):
+      return "This is bool."
+    else:
+      return "This is int."
   elif isinstance(value, float):
     return "This is float."
-  elif isinstance(value, bool):
-    return "This is bool."
   else:
     return "Unknow."
 
