@@ -5,7 +5,7 @@
 
 # 親クラス（スーパークラス）
 class BaseUser:
-  def __init__(self, name):
+  def __init__(self, name: str):
     self.name = name
   def show_profile(self):
     print("My name is %s." % self.name)
@@ -19,7 +19,7 @@ class ManUser(BaseUser):
       親クラスの関数を上書きする
       この場合は__init__、show_profileの関数を子クラスが上書きして利用している
   """
-  def __init__(self, name, age):
+  def __init__(self, name: str, age: int):
     """
       親クラスの資産を利用する場合は super() で指定する
       親クラスのコンストラクタを呼ぶ

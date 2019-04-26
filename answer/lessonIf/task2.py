@@ -2,7 +2,7 @@
 課題 if文
 """
 
-def func1(x, y, type):
+def func1(x: float, y: float, type: int) -> float:
   if (type == 0):
     return x + y
   elif (type == 1):

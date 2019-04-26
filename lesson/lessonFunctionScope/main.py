@@ -8,18 +8,18 @@
 def func1():
   print("関数です")
 
-def func2(value):
+def func2(value: str):
   print(value)
 
-def func3(x, y):
+def func3(x: float, y: float) -> float:
   return x + y
 
 # デフォルト引数
-def func4(x, y = 10):
+def func4(x: float, y: float = 10) -> float:
   return x + y
 
 # 戻り値の型を指定する
-def func5(x, y) -> float:
+def func5(x: float, y: float) -> float:
   return x + y
 
 # パス付き関数 中身のない関数

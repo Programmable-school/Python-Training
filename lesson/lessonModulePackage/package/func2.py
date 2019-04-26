@@ -1,2 +1,2 @@
-def show_text(text):
+def show_text(text: str):
     print(text)

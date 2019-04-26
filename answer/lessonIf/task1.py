@@ -2,7 +2,7 @@
 課題 if文
 """
 
-def func1(value):
+def func1(value: int):
   if (1 <= value and value <= 10):
     return "Top Ranker"
   elif (10 < value and value < 50):

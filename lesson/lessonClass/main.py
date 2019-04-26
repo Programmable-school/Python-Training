@@ -30,7 +30,7 @@ class User2:
     score = 0
 
     # コンストラクタ
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int):
         # クラス変数にセットする
         self.name = name
         self.age = age
@@ -52,7 +52,7 @@ print("User2: %s %d %d" % (user2.name, user2.age, user2.score))   # User2: masay
 
 
 class User3:
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
 

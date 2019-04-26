@@ -4,7 +4,7 @@ if文
 """
 
 # if文
-def func1(value):
+def func1(value: int):
   if value == 1:
     print("value is 1")
   elif value == 3:
@@ -12,7 +12,7 @@ def func1(value):
   else:
     print("value is not 1")
 
-def func2(score):
+def func2(score: int):
   if (80 <= score and score <= 100):
     print("Good")
   elif (60 <= score and score < 80):
@@ -23,7 +23,7 @@ def func2(score):
     print("ahahaha..")
 
 # 条件演算子
-def func3(score):
+def func3(score: int):
   print("Good" if 100 >= score and score >= 80 else "ahahaha")
 
 func1(1)  # value is 1

@@ -5,13 +5,13 @@
 class Util:
   def __init__(self):
     pass
-  def add(self, x, y):
+  def add(self, x: float, y: float) -> float:
     return x + y
-  def sub(self, x, y):
+  def sub(self, x: float, y: float) -> float:
     return x - y
-  def multi(self, x, y):
+  def multi(self, x: float, y: float) -> float:
     return x * y
-  def div(self, x, y):
+  def div(self, x: float, y: float) -> float:
     return x / y
 
 x = 10

@@ -1,2 +1,2 @@
-def show_message(text):
+def show_message(text: str):
     print(text)
