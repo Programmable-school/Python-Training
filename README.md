@@ -25,7 +25,7 @@
 - [日付関数](#日付関数)
 - [数学関数](#数学関数)
 - [例外処理](#例外処理)
-- ファイルの入出力
+- [ファイルの入出力](#ファイルの入出力)
 - 正規表現
 - TypeAliases
 - Callable
@@ -41,7 +41,7 @@
 [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)
 
 ### Hello worldを表示する
-任意のフォルダ作成し、その中にmain.pyを作成して以下のコードを実装してください。
+任意のディレクトリ作成し、その中にmain.pyを作成して以下のコードを実装してください。
 
 ```python
 print("Hello World")
@@ -1001,7 +1001,7 @@ $ python3 lesson/lessonModulePackage/main.py
 
 また「足し算」「引き算」「掛け算」「割り算」するそれぞれ４つの関数を実装した calc.py を作成し、main.pyでcalc.pyをimportしてそれぞれの計算結果を表示してください。
 
-フォルダ構成は以下の通りです
+ディレクトリ構成は以下の通りです
 ```
 .
 └── lessonModulePackage
@@ -1134,6 +1134,63 @@ $ python3 answer/lessonExcept/task2.py
 2
 3
 except error by raise
+```
+
+### ファイルの入出力
+```sh
+# 実行
+$ python3 lesson/lessonFile/main.py 
+```
+
+[ソースコード](./lesson/lessonFile/main.py)
+
+#### 課題
+##### 課題 1
+コードからディレクトリとファイルを作成してください。
+
+ディレクトリ構成は以下の通りです。
+```
+.
+└── Dir
+    ├── file.py
+    └── Child
+        ├── __init__.py
+        └── file.py
+```
+
+また ファイルの内容は以下の通りです。
+
+
+file.py
+```python
+print("Hello world")
+```
+
+\__init__.py
+
+```python
+# none
+```
+
+作成後、コードからtreeを呼び出しディレクトリ構成をコンソール上に表示してください。
+
+コードからtreeを呼び出す際は subprocess をimportして利用してください。<br>
+[https://docs.python.org/ja/3/library/subprocess.html](https://docs.python.org/ja/3/library/subprocess.html)
+
+
+```sh
+# 実行
+$ python3 answer/lessonFile/task1.py
+
+# 出力
+├── Dir
+│   ├── Child
+│   │   ├── __init__.py
+│   │   └── file.py
+│   └── file.py
+└── task1.py
+
+2 directories, 4 files
 ```
 
 ## 備考
