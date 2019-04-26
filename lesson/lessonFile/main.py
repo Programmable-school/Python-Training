@@ -83,7 +83,7 @@ show_exist_dir(dir1_child1)   # new_dir1/child1 is not exist
 
 """
 パスを取得
-  ファイル操作においてパスを指定する際に利用する
+  パスを指定してファイル操作する際に利用する
 """
 # カレントディレクトリまでの絶対パス
 print(os.getcwd())
