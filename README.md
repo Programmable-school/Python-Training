@@ -26,10 +26,9 @@
 - [数学関数](#数学関数)
 - [例外処理](#例外処理)
 - [ファイルの入出力](#ファイルの入出力)
-- 正規表現
-- TypeAliases
-- Callable
+- [TypeAliases](TypeAliases)
 - Generics
+- 正規表現
 - Webスクレイピング
 
 ## 開発環境
@@ -1192,6 +1191,42 @@ $ python3 answer/lessonFile/task1.py
 
 2 directories, 4 files
 ```
+
+### TypeAliases
+```sh
+# 実行
+$ python3 lesson/lessonTypeAliases/main.py 
+```
+
+[ソースコード](./lesson/lessonTypeAliases/main.py)
+
+#### 課題
+##### 課題 1
+str型とstrのList型を別名で定義してそれぞれの型のデータを表示する関数を実装してください。
+
+```sh
+# 実行
+$ python3 answer/lessonTypeAliases/task1.py
+
+# 出力
+show_value: a
+show_values: ['a', 'b', 'c']
+```
+
+### Generics
+#### 課題
+##### 課題 1
+
+
+### 正規表現
+#### 課題
+##### 課題 1
+
+
+### Webスクレイピング
+#### 課題
+##### 課題 1
+
 
 ## 備考
 [Pythonの基本的なエラー一覧とその原因の確認方法](https://note.nkmk.me/python-error-message/)
