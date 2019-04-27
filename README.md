@@ -26,7 +26,7 @@
 - [数学関数](#数学関数)
 - [例外処理](#例外処理)
 - [ファイルの入出力](#ファイルの入出力)
-- [TypeAliases](TypeAliases)
+- [TypeAliases](#TypeAliases)
 - Generics
 - 正規表現
 - Webスクレイピング
