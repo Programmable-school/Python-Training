@@ -18,7 +18,7 @@ for value in nums:
 for value in nums:
   # valueが30の時にループを抜ける
   if value == 30:
-    print("BREAK")
+    print('BREAK')
     break
   print(value)
 # 10
@@ -29,7 +29,7 @@ for value in nums:
 for value in nums:
   # valueが30の場合はそれ以降の処理をスキップする
   if value == 30:
-    print("SKIP")
+    print('SKIP')
     continue
   print(value)  
 # 10
@@ -43,7 +43,7 @@ for value in nums:
 for value in nums:
   print(value)    # 10 ... 60
 else:
-  print("FINISH") # FINISH
+  print('FINISH') # FINISH
 # 10
 # 20
 # 30
@@ -83,7 +83,7 @@ for i, value in enumerate(nums):
 # 5 60
  
 # 複数のリスト要素 zip
-values1 = ["Taro", "Hanako", "Shun"]
+values1 = ['Taro', 'Hanako', 'Shun']
 values2 = [40, 30, 20]
 for name, age in zip(values1, values2):
   print(name, age)

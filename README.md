@@ -27,7 +27,7 @@
 - [例外処理](#例外処理)
 - [ファイルの入出力](#ファイルの入出力)
 - [TypeAliases](#TypeAliases)
-- Generics
+- [Generics](#Generics)
 - 正規表現
 - Webスクレイピング
 
@@ -43,7 +43,7 @@
 任意のディレクトリ作成し、その中にmain.pyを作成して以下のコードを実装してください。
 
 ```python
-print("Hello World")
+print('Hello World')
 ```
 
 プログラムの実行方法は以下の通りです。
@@ -1214,8 +1214,52 @@ show_values: ['a', 'b', 'c']
 ```
 
 ### Generics
+
+```sh
+# 実行
+$ python3 lesson/lessonGenerics/main.py 
+```
+
+[ソースコード](./lesson/lessonGenerics/main.py)
+
+
 #### 課題
 ##### 課題 1
+何も制約されていないGenericsを作成し、Genericsのデータリストを表示する関数を実装してください。
+
+```sh
+# 実行
+$ python3 answer/lessonGenerics/task1.py
+
+# 出力
+[1, 2, 3]
+['a', 'b', 'c']
+```
+
+
+##### 課題 2
+Genericsをクラス内部で扱えるよう定義し、そのGenericsのsetとget関数を持ったクラスを作成してください。<br>
+作成したクラスの使い方は以下の通りです。
+
+```python
+model1 = Model[int]()
+model1.set_value(123)
+print(model1.get_value())
+
+model2 = Model[str]()
+model2.set_value('aiueo')
+print(model2.get_value())
+```
+
+```sh
+# 実行
+$ python3 answer/lessonGenerics/task2.py
+
+# 出力
+123
+aiueo
+```
+
 
 
 ### 正規表現

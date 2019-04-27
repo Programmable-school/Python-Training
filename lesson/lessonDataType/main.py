@@ -5,7 +5,7 @@
 
 data_int = 10          # 数値（整数） int型
 data_float = 10.1234   # 数値（浮動小数点数）float型
-data_str = "Hello"     # 文字列 str型
+data_str = 'Hello'     # 文字列 str型
 is_true = True         # 真偽値 bool型
 
 print(data_int)        # 10

@@ -53,22 +53,22 @@ print(lastPop, nums3)     # 400 [0, 1, 2, 3, 4, 200, 300]
 
 # 参照渡し
 list1 = [0, 1, 2, 3]
-print("list1", list1)     # list1 [0, 1, 2, 3]
+print('list1', list1)     # list1 [0, 1, 2, 3]
 list2 = list1
 list2[2] = 100
-print("list1", list1)     # list1 [0, 1, 100, 3]
-print("list2", list2)     # list2 [0, 1, 100, 3]
+print('list1', list1)     # list1 [0, 1, 100, 3]
+print('list2', list2)     # list2 [0, 1, 100, 3]
 
 """
 タプル型
   違う型のデータを複数扱える
 """
-values = (0, 10.123, "Hello")
+values = (0, 10.123, 'Hello')
 print(values)                 # (0, 10.123, 'Hello')
 print(values[0], values[2])   # 0 Hello
 
-print(values.index("Hello"))  # 2
-print(values.count("Hello"))  # 1
+print(values.index('Hello'))  # 2
+print(values.count('Hello'))  # 1
 
 # スライス
 slice_values = [10, 20, 30, 40]

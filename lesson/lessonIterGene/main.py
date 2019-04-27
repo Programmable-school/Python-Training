@@ -10,13 +10,13 @@
 values = [0, 1, 2, 3, 4, 5]
 it = iter(values) # イテレータ化
 
-print("iter %d" % (next(it))) # iter 0
-print("iter %d" % (next(it))) # iter 1
-print("iter %d" % (next(it))) # iter 2
+print('iter %d' % (next(it))) # iter 0
+print('iter %d' % (next(it))) # iter 1
+print('iter %d' % (next(it))) # iter 2
 
 # for文で残りの要素を取り出す
 for i in it:
-  print("iter %d" % (i))
+  print('iter %d' % (i))
 # iter 3
 # iter 4
 # iter 5
@@ -45,7 +45,7 @@ def gen1() -> int:
 
 data = gen1()
 for i in data:
-  print("gene %d" % (i))
+  print('gene %d' % (i))
   if i == 5:
     break
 # gene 0
@@ -57,7 +57,7 @@ for i in data:
 
 for i in data:
   # 前のfor文で返した値を記憶しているため、次のデータから取得することができる
-  print("gene %d" % (i))
+  print('gene %d' % (i))
   if i == 10:
     break
 # gene 6
@@ -77,6 +77,6 @@ def gen2():
 
 # __next__でyieldで指定された値を順次取り出す
 gen = gen2()
-print(gen.__next__()) # 10
-print(gen.__next__()) # 20
-print(gen.__next__()) # 30
+print(gen.__next__())   # 10
+print(gen.__next__())   # 20
+print(gen.__next__())   # 30

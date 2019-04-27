@@ -11,10 +11,10 @@ Int = int
 Ints = List[int]
 
 def show_value(a: Int):
-  print("show_value: %d" % (a))
+  print('show_value: %d' % (a))
 
 def show_values(a: Ints):
-  print("show_values: %s" % (a))
+  print('show_values: %s' % (a))
 
 show_value(0)           # show_value: 0
 show_values([1, 2, 3])  # show_values: [1, 2, 3]

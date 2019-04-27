@@ -11,7 +11,7 @@ try:
   value = 10 / 0
   print(value)
 except ZeroDivisionError as e:
-  print("except Error!", e)
+  print('except Error!', e)
 
 
 """
@@ -23,17 +23,17 @@ try:
   value = 10 / 0
   print(value)
 except ZeroDivisionError as e:
-  print("except Error!", e)
+  print('except Error!', e)
 else:
-  print("else")
+  print('else')
 finally:
-  print("finally")
+  print('finally')
 
 """
 raise
   故意に例外発生させることができる
 """
 try:
-  raise NameError("name error by raise")
+  raise NameError('name error by raise')
 except NameError as e:
   print(e)

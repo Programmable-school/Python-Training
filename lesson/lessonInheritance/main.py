@@ -8,9 +8,9 @@ class BaseUser:
   def __init__(self, name: str):
     self.name = name
   def show_profile(self):
-    print("My name is %s." % self.name)
+    print('My name is %s.' % self.name)
   def show_base_user(self):
-    print("My class is BaseUser.")
+    print('My class is BaseUser.')
 
 # 子クラス（サブクラス） BaseUserを継承する
 class ManUser(BaseUser):
@@ -33,16 +33,16 @@ class ManUser(BaseUser):
     self.name = name
 
   def show_profile(self):
-    print("My name is %s. I'm %d yeras old." % (self.name, self.age))
+    print('My name is %s. I\'m %d yeras old.' % (self.name, self.age))
   
   """
     勿論、子クラスだけの関数を定義できる
   """
   def show_man_user(self):
-    print("My class is ManUser.")
+    print('My class is ManUser.')
     
 
-user1 = ManUser("Taro", 20)
+user1 = ManUser('Taro', 20)
 
 # 親クラスの関数を呼ぶ
 user1.show_base_user()    # My class is BaseUser.
@@ -51,4 +51,4 @@ user1.show_base_user()    # My class is BaseUser.
 user1.show_man_user()     # My class is ManUser.
 
 # 親クラスの関数をオーバーライドした子クラスの関数を呼ぶ
-user1.show_profile()      # My name is Taro. I'm 20 yeras old.
+user1.show_profile()      # My name is Taro. I'm 20 years old.

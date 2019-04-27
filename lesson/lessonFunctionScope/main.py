@@ -6,7 +6,7 @@
 
 # 関数
 def func1():
-  print("関数です")
+  print('関数です')
 
 def func2(value: str):
   print(value)
@@ -29,7 +29,7 @@ def func_pass():
 
 
 func1()                 # 関数です
-func2("Kansudesu")      # Kansudesu
+func2('Kansudesu')      # Kansudesu
 print(func3(10, 2))     # 12
 print(func4(10))        # 20
 print(func5(10.2, 2.5)) # 12.7

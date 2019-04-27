@@ -32,8 +32,8 @@ print(datetime.datetime.now())      # 2019-04-26 06:40:43.120650
     %U : 0埋めした10進数で表記した年中の週番号 （週の始まりは日曜日）
     %W : 0埋めした10進数で表記した年中の週番号 （週の始まりは月曜日）
 """
-date_str1 = "2019/1/10 10:20:30"
-datetime1 = datetime.datetime.strptime(date_str1, "%Y/%m/%d %H:%M:%S")
+date_str1 = '2019/1/10 10:20:30'
+datetime1 = datetime.datetime.strptime(date_str1, '%Y/%m/%d %H:%M:%S')
 print(datetime1)            # 2019-01-10 10:20:30
 print(datetime1.year)       # 2019
 print(datetime1.month)      # 1
@@ -43,9 +43,9 @@ print(datetime1.minute)     # 20
 print(datetime1.second)     # 30
 print(datetime1.date())     # 2019-01-10
 print(datetime1.weekday())  # 3
-day_of_week_str = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][datetime1.weekday()]
+day_of_week_str = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][datetime1.weekday()]
 print(day_of_week_str)      # Thu
-print("%d/%d/%d (%s) %d:%d:%d" % (datetime1.year, datetime1.month, datetime1.day, day_of_week_str, datetime1.hour, datetime1.minute, datetime1.second))
+print('%d/%d/%d (%s) %d:%d:%d' % (datetime1.year, datetime1.month, datetime1.day, day_of_week_str, datetime1.hour, datetime1.minute, datetime1.second))
 # 2019/1/10 (Thu) 10:20:30
 
 
@@ -53,7 +53,7 @@ print("%d/%d/%d (%s) %d:%d:%d" % (datetime1.year, datetime1.month, datetime1.day
 日付から文字列を取得
 """
 datetime2 = datetime.datetime(2019, 1, 10, 10, 20, 30)
-date_str2 = datetime2.strftime("%Y/%m/%d %H:%M:%S")
+date_str2 = datetime2.strftime('%Y/%m/%d %H:%M:%S')
 print(date_str2)    # 2019/01/10 10:20:30
 
 

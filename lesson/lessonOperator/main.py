@@ -14,6 +14,6 @@ print(r1, r2, r3, r4, r5, r6) # 13 30 3.3333333333333335 3 1 1000
 
 
 # in演算子
-str1 = "value"
+str1 = 'value'
 print('value' in str1)    # True
 print('value11' in str1)  # False
