@@ -4,12 +4,12 @@
 
 i = 0
 while i < 5:
-  print("loop i %d" % (i))
+  print('loop i %d' % (i))
   if i == 0:
-    print("Dog")
+    print('Dog')
   elif i == 1:
-    print("Cat")
+    print('Cat')
   elif i == 2:
-    print("Break")
+    print('Break')
     break
   i += 1

@@ -2,7 +2,7 @@
 課題 イテレータ_ジェネレータ
 """
 
-values = ["Hello", "world", "Good", "Morning"]
+values = ['Hello', 'world', 'Good', 'Morning']
 it = iter(values)
 
 print(next(it))

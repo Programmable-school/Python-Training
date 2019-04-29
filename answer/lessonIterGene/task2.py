@@ -3,7 +3,7 @@
 """
 
 def gene() -> str:
-  values = ["Hello", "world", "Good", "Morning"]
+  values = ['Hello', 'world', 'Good', 'Morning']
   for value in values:
     yield value
 

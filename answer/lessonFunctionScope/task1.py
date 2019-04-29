@@ -3,6 +3,6 @@
 """
 
 def func1():
-  print("こんにちは")
+  print('こんにちは')
 
 func1()

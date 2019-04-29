@@ -4,5 +4,5 @@
 
 i = 0
 while i < 5:
-  print("loop i %d" % (i))
+  print('loop i %d' % (i))
   i += 1

@@ -3,7 +3,7 @@
 """
 class Boss:
   def __init__(self):
-    self.otakara = "お宝の在りかは大阪上本町の上の方だよ！"
+    self.otakara = 'お宝の在りかは大阪上本町の上の方だよ！'
   def show_otakara(self):
     print(self.otakara)
 

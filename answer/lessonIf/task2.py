@@ -16,7 +16,7 @@ def func1(x: float, y: float, type: int) -> float:
 
 x = 10
 y = 3
-print("%d + %d: %d" % (x, y, func1(x, y, 0)))
-print("%d - %d: %d" % (x, y, func1(x, y, 1)))
-print("%d * %d: %d" % (x, y, func1(x, y, 2)))
-print("%d / %d: %f" % (x, y, func1(x, y, 3)))
+print('%d + %d: %d' % (x, y, func1(x, y, 0)))
+print('%d - %d: %d' % (x, y, func1(x, y, 1)))
+print('%d * %d: %d' % (x, y, func1(x, y, 2)))
+print('%d / %d: %f' % (x, y, func1(x, y, 3)))

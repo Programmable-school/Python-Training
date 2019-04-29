@@ -2,13 +2,13 @@
 課題 for文
 """
 
-size = int(input("Please input size > "))
-result = ""
+size = int(input('Please input size > '))
+result = ''
 for i in range(size):
   for j in range(i + 1):
-    result += "*"
+    result += '*'
   else:
     if (i != size - 1):
-      result += "\n"
+      result += '\n'
 else:
   print(result)

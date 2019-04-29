@@ -17,7 +17,7 @@ class Util:
 x = 10
 y = 3
 util = Util()
-print("%d + %d = %d" % (x, y, util.add(x, y)))
-print("%d - %d = %d" % (x, y, util.sub(x, y)))
-print("%d * %d = %d" % (x, y, util.multi(x, y)))
-print("%d / %d = %f" % (x, y, util.div(x, y)))
+print('%d + %d = %d' % (x, y, util.add(x, y)))
+print('%d - %d = %d' % (x, y, util.sub(x, y)))
+print('%d * %d = %d' % (x, y, util.multi(x, y)))
+print('%d / %d = %f' % (x, y, util.div(x, y)))
