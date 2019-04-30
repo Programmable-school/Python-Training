@@ -28,7 +28,7 @@
 - [ファイルの入出力](#ファイルの入出力)
 - [TypeAliases](#TypeAliases)
 - [Generics](#Generics)
-- 正規表現
+- [文字列操作_正規表現](#文字列操作_正規表現)
 - Webスクレイピング
 
 ## 開発環境
@@ -1262,10 +1262,90 @@ aiueo
 
 
 
-### 正規表現
-#### 課題
-##### 課題 1
+### 文字列操作_正規表現
+文字列の置換、分割、検索操作を行い、正規表現を利用して操作できることを確認する。
 
+正規表現とは様々な文字列を一つの文字列で表現する。文字列の検索、置換、分割する際に利用される
+
+[基本的な正規表現一覧](https://murashun.jp/blog/20190215-01.html)
+
+```sh
+# 実行
+$ python3 lesson/lessonRegx/main.py 
+```
+
+[ソースコード](./lesson/lessonRegx/main.py)
+
+#### 課題
+課題で利用する文字列です。
+
+```python
+content: str = 'abcdefg:-:12345678:ABCD:abc:efg:?:123efg456'
+```
+
+##### 課題 1
+正規表現を用いて、文字列の数字を全て"!"に置換してください。
+
+```sh
+# 実行
+$ python3 answer/lessonRegx/task1.py
+
+# 出力
+abcdefg:-:!:ABCD:abc:efg:?:!efg!
+```
+
+##### 課題 2
+正規表現を用いて、文字列の「数字」と「大文字の英語」を全て"!"に置換してください。
+
+複数の正規表現のパターンを用いる場合はパイプか文字クラスを使ってOR、ANDを表現します。
+
+[正規表現での、OR（いずれか、または）の表現方法](http://www-creators.com/archives/5039)
+
+[正規表現：AND（かつ）の表現方法](http://www-creators.com/archives/5332)
+
+```sh
+# 実行
+$ python3 answer/lessonRegx/task2.py
+
+# 出力
+abcdefg:-:!:!:abc:efg:?:!efg!
+```
+
+##### 課題 3
+splitを用いて":"区切りで文字列を分割し、正規表現を用いて分割した文字列の「数字」と「大文字の英語」を全て"!"に置換した文字列を表示してください。
+
+```sh
+# 実行
+$ python3 answer/lessonRegx/task3.py
+
+# 出力
+abcdefg-!!abcefg?!efg!
+```
+
+##### 課題 4
+正規表現を用いて、以下の文字列がメールアドレスかどうか判定できるよう実装してください。
+
+```python
+content1: str = 'test@test.com'
+content2: str = 'dummy'
+content3: str = 'https://google.com'
+```
+
+メールアドレスの正規表現は以下の通りです。
+
+```python
+pattern: str = r'^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$'
+```
+
+```sh
+# 実行
+$ python3 answer/lessonRegx/task4.py
+
+# 出力
+test@test.com -> True
+dummy -> False
+https://google.com -> False
+```
 
 ### Webスクレイピング
 #### 課題
