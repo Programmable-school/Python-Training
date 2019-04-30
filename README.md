@@ -29,7 +29,7 @@
 - [TypeAliases](#TypeAliases)
 - [Generics](#Generics)
 - [文字列操作_正規表現](#文字列操作_正規表現)
-- Webスクレイピング
+- [Webスクレイピング](#Webスクレイピング)
 
 ## 開発環境
 - Python 3.6.5 以上
@@ -1346,6 +1346,33 @@ https://google.com -> False
 ```
 
 ### Webスクレイピング
+
+
+beautifulsoup4 ライブラリをインストール。
+
+```sh
+$ pip3 install beautifulsoup4
+```
+
+#### HTML要素を操作して、CSVファイルへ出力する
+
+```sh
+# 実行
+$ python3 lesson/lessonScraping/main1.py 
+```
+
+[ソースコード](./lesson/lessonScraping/main1.py)
+
+
+#### 外部URLの要素を取得、操作してCSVファイルへ出力する
+
+```sh
+# 実行
+$ python3 lesson/lessonScraping/main2.py 
+```
+
+[ソースコード](./lesson/lessonScraping/main2.py)
+
 #### 課題
 ##### 課題 1
 
