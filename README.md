@@ -1301,8 +1301,6 @@ abcdefg:-:!:ABCD:abc:efg:?:!efg!
 
 [正規表現での、OR（いずれか、または）の表現方法](http://www-creators.com/archives/5039)
 
-[正規表現：AND（かつ）の表現方法](http://www-creators.com/archives/5332)
-
 ```sh
 # 実行
 $ python3 answer/lessonRegx/task2.py
@@ -1356,3 +1354,7 @@ https://google.com -> False
 [Pythonの基本的なエラー一覧とその原因の確認方法](https://note.nkmk.me/python-error-message/)
 
 [Pycharm：import文で「Unresolved reference」と警告されてしまう](http://virgo.hatenadiary.jp/entry/2015/08/23/023717)
+
+[正規表現での、OR（いずれか、または）の表現方法](http://www-creators.com/archives/5039)
+
+[正規表現：AND（かつ）の表現方法](http://www-creators.com/archives/5332)
