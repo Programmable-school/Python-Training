@@ -15,9 +15,9 @@ html = """
     <div id="wrapper">
       <h1>タイトル</h1>
       <ul class="content">
-        <li>コンテンツ1</li>
-        <li>コンテンツ2</li>
-        <li>コンテンツ3</li>
+        <li class="one">コンテンツ1</li>
+        <li class="two">コンテンツ2</li>
+        <li class="three">コンテンツ3</li>
       </ul>
     </div>
   </body>
@@ -46,3 +46,43 @@ for li in li_list:
 # コンテンツ1
 # コンテンツ2
 # コンテンツ3
+
+# HTML要素のvalueを取得
+for li in li_list:
+  try:
+    # getで指定したHTML要素のvalueを取得
+    value = li.get('class').pop(0)
+    print(value)
+    # one
+    # two
+    # three
+    if value == 'two':
+      print('This is two')  # This is two
+  except:
+    pass
+
+
+"""
+スクレイピングしたデータをCSVへ出力する
+"""
+
+import csv, os, datetime
+
+filename = os.path.dirname(os.path.abspath(__file__)) + '/scraping_1_' + datetime.datetime.today().strftime('%Y%m%d_%H%M%S') + '.csv'
+
+# 書き込み
+for i, item in enumerate(li_list):
+  f = open(filename, 'a')
+  writer = csv.writer(f)
+  writer.writerow([i, item.string])
+else:
+  f.close()
+
+# 読み込み
+with open(filename) as f:
+  reader = csv.reader(f)
+  for item in reader:
+    print(item, item[0], item[1])
+# ['0', 'コンテンツ1'] 0 コンテンツ1
+# ['1', 'コンテンツ2'] 1 コンテンツ2
+# ['2', 'コンテンツ3'] 2 コンテンツ3

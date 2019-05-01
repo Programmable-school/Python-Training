@@ -67,3 +67,17 @@ r_subn = re.subn(pattern3, 'ABC', content1)
 print(r_subn)       # ('ABC,-,12345678,ABCD,ABC,ABC,?,123ABC456', 4)
 print(r_subn[0])    # ABC,-,12345678,ABCD,ABC,ABC,?,123ABC456
 print(r_subn[1])    # 4
+
+
+"""
+処理の高速化
+  compileをすると処理が速くなる
+"""
+
+re_pattern = re.compile(pattern3)
+re_match = re_pattern.match(content1)
+re_search = re.search(re_pattern, content1)
+print(re_match.group())   # abcdefg
+print(re_search.group())  # abcdefg
+print(re.findall(re_pattern, content1))     # ['abcdefg', 'abc', 'efg', 'efg']
+print(re.sub(re_pattern, 'ABC', content1))  # ABC,-,12345678,ABCD,ABC,ABC,?,123ABC456

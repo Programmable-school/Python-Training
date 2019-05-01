@@ -115,6 +115,8 @@ dmypy.json
 
 # cache
 /*/*/__pycache__
+/*/*/scraping*
+/*/*/output*
 
 # idea
 .idea

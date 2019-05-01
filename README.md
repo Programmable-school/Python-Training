@@ -26,6 +26,7 @@
 - [数学関数](#数学関数)
 - [例外処理](#例外処理)
 - [ファイルの入出力](#ファイルの入出力)
+- [with文](#with文)
 - [TypeAliases](#TypeAliases)
 - [Generics](#Generics)
 - [文字列操作_正規表現](#文字列操作_正規表現)
@@ -642,6 +643,7 @@ Break
 ```
 
 ### イテレータ_ジェネレータ
+
 ```sh
 # 実行
 $ python3 lesson/lessonIterGene/main.py 
@@ -1191,6 +1193,19 @@ $ python3 answer/lessonFile/task1.py
 
 2 directories, 4 files
 ```
+
+### with文
+
+```sh
+# 実行
+$ python3 lesson/lessonWith/main.py 
+```
+
+[ソースコード](./lesson/lessonWith/main.py)
+
+#### 課題
+##### 課題 1
+
 
 ### TypeAliases
 ```sh
