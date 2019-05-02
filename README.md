@@ -1390,7 +1390,38 @@ $ python3 lesson/lessonScraping/main2.py
 
 #### 課題
 ##### 課題 1
+以下のHTML要素からcontent内のtitleとhrefを取得してCSVファイルへ出力し、CSVファイルが正常に出力されていることを確認してください。
 
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webスクレイピング</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>タイトル</h1>
+      <div class="content">
+        <a href="https://newspicks.com/">NewsPicks</a>
+        <a href="https://www.yahoo.co.jp/">Yahoo Japan</a>
+        <a href="https://www.nikkei.com/">日本経済新聞</a>
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+```sh
+# 実行
+$ python3 answer/lessonScraping/task1.py
+
+# 出力
+['0', 'NewsPicks', 'https://newspicks.com/']
+['1', 'Yahoo Japan', 'https://www.yahoo.co.jp/']
+['2', '日本経済新聞', 'https://www.nikkei.com/']
+```
+
+##### 課題 2
 
 ## 備考
 [Pythonの基本的なエラー一覧とその原因の確認方法](https://note.nkmk.me/python-error-message/)
