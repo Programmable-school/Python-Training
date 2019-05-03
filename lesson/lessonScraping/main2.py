@@ -18,6 +18,7 @@ html = request.urlopen(url)
 soup = BeautifulSoup(html, 'html.parser')
 news_cards = soup.find_all('div', attrs={'class': 'news-card vertical'})
 
+f = open(filename, 'w')
 for i, news in enumerate(news_cards):
   try:
     # topicのtitleとhrefを取得
@@ -26,7 +27,6 @@ for i, news in enumerate(news_cards):
     title = a.find('div', attrs={'class': 'title'}) 
 
     # 出力
-    f = open(filename, 'a')
     writter = csv.writer(f)
     writter.writerow([i, title.string, url + href])
   except:

@@ -71,8 +71,8 @@ import csv, os, datetime
 filename = os.path.dirname(os.path.abspath(__file__)) + '/scraping_1_' + datetime.datetime.today().strftime('%Y%m%d_%H%M%S') + '.csv'
 
 # 書き込み
+f = open(filename, 'w')
 for i, item in enumerate(li_list):
-  f = open(filename, 'a')
   writer = csv.writer(f)
   writer.writerow([i, item.string])
 else:

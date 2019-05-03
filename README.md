@@ -1422,6 +1422,23 @@ $ python3 answer/lessonScraping/task1.py
 ```
 
 ##### 課題 2
+任意のWebサイトをスクレイピングした情報をCSVへ出力し、CSVファイルが正常に出力されていることを確認してください。
+
+```sh
+# 実行
+$ python3 answer/lessonScraping/task2.py
+
+# 出力
+url is https://www.nikkei.com 2019/05/03 15:19:17
+['0', '5G特許出願、中国が最大\u3000世界シェア3分の1', 'https://www.nikkei.com/article/DGXMZO44412620T00C19A5MM8000/']
+['1', '幼少から深めた自覚\u3000歴代の姿も探求', 'https://www.nikkei.com/article/DGXMZO44412580S9A500C1CZ8000/']
+['2', ' 「大きな道しるべ」\u3000象徴天皇のバトン', 'https://www.nikkei.com/article/DGXMZO44407820S9A500C1EA1000/']
+['3', '訪日客が招く「観光公害」\u3000川越・京都…住民に影響も', 'https://www.nikkei.com/article/DGXMZO44266480W9A420C1SHA000/']
+['4', '中国、AIで7つの優位(FT)', 'https://www.nikkei.com/article/DGXMZO44244690W9A420C1TCR000/']
+['5', '「変化受け止め、次の革新へ」\u3000経団連・中西宏明会長', 'https://www.nikkei.com/article/DGXMZO44277290W9A420C1SHA000/']
+['6', '中国対抗へ「官民学で連携強化を」\u3000前米大統領補佐官', 'https://www.nikkei.com/article/DGXMZO44415700T00C19A5000000/']
+```
+
 
 ## 備考
 [Pythonの基本的なエラー一覧とその原因の確認方法](https://note.nkmk.me/python-error-message/)
