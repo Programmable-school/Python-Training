@@ -624,6 +624,7 @@ loop i 1
 loop i 2
 loop i 3
 loop i 4
+Good
 ```
 
 ##### 課題 2
