@@ -1205,6 +1205,17 @@ $ python3 lesson/lessonWith/main.py
 
 #### 課題
 ##### 課題 1
+```__enter__, __exit__, __del__``` を実装したクラスを作成し、with文で実行されることを確認してください。
+
+```sh
+# 実行
+$ python3 answer/lessonWith/task1.py
+
+# 出力
+enter <__main__.Model object at 0x10e3f2be0>
+exit <__main__.Model object at 0x10e3f2be0>
+del <__main__.Model object at 0x10e3f2be0>
+```
 
 
 ### TypeAliases
